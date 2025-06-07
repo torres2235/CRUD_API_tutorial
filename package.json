@@ -21,7 +21,9 @@
   },
   "homepage": "https://github.com/torres2235/CRUD_API_tutorial#readme",
   "dependencies": {
-    "express": "^5.1.0"
+    "express": "^5.1.0",
+    "mongodb": "^6.17.0",
+    "mongoose": "^8.15.1"
   },
   "devDependencies": {
     "nodemon": "^3.1.10"
