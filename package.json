@@ -1,0 +1,25 @@
+{
+  "name": "crud_api_tutorial",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "serve": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/torres2235/CRUD_API_tutorial.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/torres2235/CRUD_API_tutorial/issues"
+  },
+  "homepage": "https://github.com/torres2235/CRUD_API_tutorial#readme",
+  "dependencies": {
+    "express": "^5.1.0"
+  }
+}
