@@ -11,6 +11,7 @@ app.get("/", (req, res) => {
 });
 
 app.get("/api/products", async (req, res) => {
+  // get all
   try {
     const products = await Product.find({});
     res.status(200).json(products);
@@ -19,7 +20,19 @@ app.get("/api/products", async (req, res) => {
   }
 });
 
+app.get("/api/product/:id", async (req, res) => {
+  // get one
+  try {
+    const { id } = req.params;
+    const product = await Product.findById(id);
+    res.status(200).json(product);
+  } catch (error) {
+    res.status(500).json({ message: error.message });
+  }
+});
+
 app.post("/api/products", async (req, res) => {
+  // post new prodcut
   //   console.log(req.body);
   //   res.send(req.body);
   try {
