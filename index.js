@@ -5,6 +5,7 @@ const Product = require("./models/product.model");
 const app = express();
 
 app.use(express.json());
+app.use(express.urlencoded({ extended: false })); // allows use of forms
 
 // generic get
 app.get("/", (req, res) => {
